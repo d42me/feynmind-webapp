@@ -5,9 +5,11 @@ type PageHeadProps = {
 };
 
 export default function PageHead({ title }: PageHeadProps) {
+  const pageTitle = title + " | FeynMind";
+
   return (
     <Head>
-      <title>{title} | FeynMind</title>
+      <title>{pageTitle}</title>
       <link rel="icon" type="image/png" href="/favicon.png" />
       <meta property="og:image" content="https://feynmind.ai/api/og" />
       <meta property="og:title" content="FeynMind" />
