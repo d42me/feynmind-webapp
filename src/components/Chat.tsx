@@ -24,13 +24,13 @@ export default function Chat() {
         transition={{ duration: 3 }}
         className="w-full h-screen flex flex-col items-center"
         style={{
-          backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/5f33132c8758c705bb28a841/1600728617215-03H5TU4R20N3I2TMJSX9/Caltech+East+Bridge+AV+punch+111118+040+photoshopped+2.jpg')`,
+          backgroundImage: `url('/caltech-background.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           filter: "grayscale(100%)",
         }}
       >
-        <section className="flex-1 overflow-y-auto p-4 md:p-8 space-y-3 md:space-y-6 w-full">
+        <section className="flex-1 overflow-y-auto p-4 md:p-8 space-y-3 md:space-y-6 w-full max-w-5xl no-scrollbar">
           {messages.map((m, index) => (
             <motion.div
               key={m.id}
@@ -64,7 +64,7 @@ export default function Chat() {
           ))}
         </section>
 
-        <section className="bg-gray-800 py-3 px-2 md:px-6">
+        <section className="bg-gray-800 py-3 px-2 md:px-6 max-w-4xl w-full">
           <form
             className="flex w-full p-2 md:p-4 space-x-2 md:space-x-4 bg-gray-800 rounded-lg"
             onSubmit={handleSubmit}
@@ -98,11 +98,19 @@ export default function Chat() {
           </form>
           <footer className="text-sm text-center text-white bg-gray-800 p-2 md:p-4 rounded-lg">
             <p>
-              FeynMind, a finetuned GPT model based on the Feynman lectures.
-              Made by{" "}
+              FeynMind, a finetuned GPT model based on the{" "}
+              <Link
+                href="https://www.feynmanlectures.caltech.edu"
+                target="_blank"
+                className="underline"
+              >
+                Feynman lectures
+              </Link>
+              . Made by{" "}
               <Link
                 href="https://twitter.com/dominik_scherm"
-                className="text-blue-400 underline"
+                target="_blank"
+                className="underline"
               >
                 @dominik_scherm
               </Link>

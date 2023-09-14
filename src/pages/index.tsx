@@ -1,5 +1,11 @@
+import PageHead from "@/components/PageHead";
 import WelcomeView from "@/components/Welcome";
 
-export default function Home() {
-  return <WelcomeView />;
+export default function Start() {
+  return (
+    <>
+      <PageHead title="Start" />
+      <WelcomeView />;
+    </>
+  );
 }
