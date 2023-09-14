@@ -16,19 +16,19 @@ export default function Chat() {
 
   return (
     <div
-      className={`min-h-screen flex flex-col md:flex-row items-center justify-center bg-top md:bg-center ${quicksand.className}`}
-      style={{
-        backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/5f33132c8758c705bb28a841/1600728617215-03H5TU4R20N3I2TMJSX9/Caltech+East+Bridge+AV+punch+111118+040+photoshopped+2.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "top",
-        filter: "grayscale(100%)",
-      }}
+      className={`min-h-screen flex flex-col md:flex-row items-center justify-center ${quicksand.className}`}
     >
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
-        className="w-full max-w-3xl md:max-w-4xl h-screen md:h-[90vh] flex flex-col items-center bg-gray-800 bg-opacity-95 text-white shadow-lg border md:border-4 border-white mx-4"
+        className="w-full h-screen flex flex-col items-center"
+        style={{
+          backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/5f33132c8758c705bb28a841/1600728617215-03H5TU4R20N3I2TMJSX9/Caltech+East+Bridge+AV+punch+111118+040+photoshopped+2.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          filter: "grayscale(100%)",
+        }}
       >
         <section className="flex-1 overflow-y-auto p-4 md:p-8 space-y-3 md:space-y-6 w-full">
           {messages.map((m, index) => (
@@ -44,7 +44,7 @@ export default function Chat() {
               <div
                 className={`w-full max-w-full md:max-w-[80%] p-3 ${
                   m.role === "user"
-                    ? "bg-gray-200 text-gray-800"
+                    ? "bg-gray-800 text-white"
                     : "bg-white text-gray-800"
                 }`}
               >
