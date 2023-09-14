@@ -7,7 +7,7 @@ export const config = {
 
 export default async function handler() {
   const imageData = await fetch(
-    new URL("./feynman-logo.png", import.meta.url)
+    new URL("./feynman-logo.jpg", import.meta.url)
   ).then((res) => res.arrayBuffer());
   return new ImageResponse(
     (
