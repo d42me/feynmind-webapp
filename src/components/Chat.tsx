@@ -16,7 +16,7 @@ export default function Chat() {
 
   return (
     <div
-      className={`h-full flex flex-col md:flex-row items-center justify-center ${quicksand.className}`}
+      className={`container flex flex-col md:flex-row items-center justify-center ${quicksand.className}`}
     >
       <motion.main
         initial={{ opacity: 0 }}

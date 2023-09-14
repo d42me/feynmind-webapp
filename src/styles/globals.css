@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+.container {
+  height: 100vh;
+  height: -webkit-fill-available;
 }
 
 @layer utilities {
