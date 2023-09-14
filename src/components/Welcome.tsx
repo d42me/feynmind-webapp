@@ -11,7 +11,7 @@ const quicksand = Quicksand({
 export default function Welcome() {
   return (
     <div
-      className={`h-screen flex flex-col items-center justify-center bg-chalkboard bg-cover bg-no-repeat text-white ${quicksand.className} p-4`}
+      className={`min-h-screen flex flex-col items-center justify-center bg-chalkboard bg-cover bg-no-repeat text-white ${quicksand.className} p-4`}
     >
       <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-center">
         Welcome to FeynMind
