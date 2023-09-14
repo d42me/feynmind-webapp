@@ -11,10 +11,10 @@ const quicksand = Quicksand({
 export default function Welcome() {
   return (
     <div
-      className={`min-h-screen flex flex-col items-center justify-center bg-chalkboard bg-cover bg-no-repeat text-white ${quicksand.className} p-4`}
+      className={`h-full flex flex-col items-center justify-center bg-chalkboard bg-cover bg-no-repeat text-white ${quicksand.className} p-4`}
     >
       <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-center">
-        Welcome to the FeynMind
+        Welcome to FeynMind
       </h1>
       <p className="text-lg md:text-2xl mb-4 text-center">
         A place to explore the wonders of science.
@@ -25,7 +25,7 @@ export default function Welcome() {
         alt="Richard Feynman"
       />
       <div className="flex flex-col md:flex-row items-center">
-        <q className="text-center mb-6 text-xl md:text-2xl leading-relaxed my-4 italic">
+        <q className="text-center mb-6 text-lg md:text-xl leading-relaxed my-4 italic">
           Physics is like sex: sure, it may give some practical results, but
           that&#39;s not why we do it.
         </q>
@@ -33,7 +33,7 @@ export default function Welcome() {
 
       <Link
         href="/chat"
-        className="bg-white text-black py-3 px-6 rounded text-center block w-full md:w-auto"
+        className="bg-white text-black py-3 px-6 text-center block w-full md:w-auto"
       >
         Get Started
       </Link>
