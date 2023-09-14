@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  height: 100vh;
-  height: -webkit-fill-available;
+html,
+body,
+#__next {
+  height: 100% !important;
 }
 
 @layer utilities {
