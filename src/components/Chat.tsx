@@ -95,7 +95,7 @@ export default function Chat() {
         </form>
         <footer className="text-sm text-center text-white bg-gray-800 p-2 md:p-4 rounded-lg">
           <p>
-            FeynMind, a finetuned GPT model based on the{" "}
+            FeynMind, a fine-tuned GPT model based on the{" "}
             <Link
               href="https://www.feynmanlectures.caltech.edu"
               target="_blank"
