@@ -11,7 +11,10 @@ export default function PageHead({ title }: PageHeadProps) {
     <Head>
       <title>{pageTitle}</title>
       <link rel="icon" type="image/png" href="/favicon.png" />
-      <meta property="og:image" content="https://feynmind.ai/api/og" />
+      <meta
+        property="og:image"
+        content="https://www.feynmind.ai/feynman-logo.jpg"
+      />
       <meta property="og:title" content="FeynMind" />
       <meta
         property="og:description"
